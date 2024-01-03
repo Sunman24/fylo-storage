@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/app.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    main,
+    footer {
+      font-family: "Raleway";
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+
+        extend: {
+
+          backgroundImage: {
+            'mob': "url('/images/bg-mobile.png')",
+            'desk': "url('/images/bg-desktop.png')",
+          },
+
+        },
+
+        colors: {
+          'start-color': 'hsl(6, 100%, 80%)',
+          'end-color': 'hsl(335, 100%, 65%)',
+          'Pale': 'hsl(243, 100%, 93%)',
+          'Grayish': 'hsl(229, 7%, 55%)',
+          'Dark': 'hsl(228, 56%, 26%)',
+          'Very-Dark': 'hsl(229, 57%, 11%)'
+        },
+
+
+
+      },
+    }
+  </script>
+
+  <title>Fylo data storage component</title>
+
+
+</head>
+
+<body>
+
+
+  <main class="bg-Very-Dark min-h-screen w-full bg-[url('public/bg-mobile.png')] lg:bg-[url('public/bg-desktop.png')] bg-no-repeat lg:bg-bottom bg-cover 
+  lg:bg-contain flex lg:flex-row flex-col items-center justify-center lg:space-x-6 space-y-4 lg:space-y-6">
+
+    <div class="rounded-tr-[6rem] rounded-2xl bg-Dark w-72 h-40 lg:-mt-2 p-8 flex flex-col ">
+
+      <div class="flex">
+        <img src="images/logo.svg" alt="logo" class="w-28">
+      </div>
+      <div class="flex pt-6 space-x-3 ">
+        <div class=" bg-Very-Dark rounded-lg w-9 h-9 flex items-center justify-center">
+          <img src="images/icon-document.svg" alt="logo" class="w-4">
+        </div>
+        <div class=" bg-Very-Dark rounded-lg w-9 h-9 flex items-center justify-center">
+          <img src="images/icon-folder.svg" alt="logo" class="w-5">
+        </div>
+        <div class=" bg-Very-Dark rounded-lg w-9 h-9 flex items-center justify-center">
+          <img src="images/icon-upload.svg" alt="logo" class="w-5">
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <div class=" rounded-2xl bg-Dark lg:w-96 w-72 h-32 p-8 flex flex-col relative  ">
+      <div class="flex justify-center lg:justify-start ">
+        <p class="text-Pale text-xs pr-1">You've used</p>
+        <p class="font-bold text-Pale text-xs pr-1">815 GB</p>
+        <p class="text-Pale text-xs">of your storage</p>
+      </div>
+
+      <div class="w-full rounded-full h-4 bg-Very-Dark/60 mt-2 flex items-center justify-start">
+        <div
+          class="w-3/4 rounded-full h-[11px] ml-1 bg-gradient-to-r from-start-color to-end-color flex items-center justify-end">
+          <div class="h-[9px] bg-Pale w-[9px] rounded-full mr-px"></div>
+        </div>
+      </div>
+
+      <div class="flex items-start justify-between pt-1 ">
+        <p class="font-semibold  text-Pale text-[10px]">0 GB</p>
+        <p class="font-semibold text-Pale text-[10px]">1000 GB</p>
+      </div>
+
+      <div
+        class="w-36 h-14 bg-Pale rounded-lg absolute -bottom-1/4 lg:bottom-0 lg:left-2/4 right-1/4 lg:-top-1/4 flex items-center justify-center space-x-2 ">
+        <p class="font-black text-3xl opacity-95">185</p>
+        <p class="text-[9px] font-semibold text-Grayish">GB LEFT</p>
+        <div class="lg:absolute lg:h-6 lg:w-6 rotate-45 bg-Pale lg:border-24 lg:border-Pale lg:-right-[9%] lg:top-3/4 ">
+        </div>
+        <div class="lg:absolute lg:h-9 lg:w-6  bg-Dark lg:border-24 lg:border-Dark lg:-right-[17%] lg:top-[64%] ">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <footer class="attribution text-xs  text-center flex justify-center space-x-1 bg-Very-Dark">
+    <p class="text-Grayish"> Challenge by </p><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+      <p class="text-Pale hover:font-semibold ">Frontend Mentor</p>
+    </a>.
+    <p class="text-Grayish"> Coded by </p><a href="https://www.frontendmentor.io/profile/Sunman24">
+      <p class="text-Pale hover:font-semibold ">Sunman24</p>
+    </a>.
+  </footer>
+
+
+
+</body>
+
+</html>
